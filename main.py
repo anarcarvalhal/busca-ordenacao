@@ -56,13 +56,11 @@ def construir_caminho_arquivo(nome_arquivo):
     
 
 def preparar_lista(fonte_de_palavras, tamanho):
-    """Gera a lista de teste e ajusta o limite de recursão."""
 
     if not fonte_de_palavras:
         raise ValueError("A fonte de palavras não pode estar vazia")
     
-    sys.setrecursionlimit(tamanho + 200)  
-    random.seed(3)  # Para resultados reproduzíveis
+    random.seed(3)  
 
     lista = random.choices(fonte_de_palavras, k=tamanho)  
     return lista
