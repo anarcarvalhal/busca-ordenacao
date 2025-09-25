@@ -1,8 +1,7 @@
 def busca_linear(lista, alvo):
   
     # Variável para estimar as comparações realizadas durante a busca. 
-    comparacoes = 0  
-    # Percorre todos os índices da lista em busca do alvo com uma comparação simples.
+    comparacoes = 0 
     for i in range(len(lista)):
         comparacoes += 1
         if lista[i] == alvo:
